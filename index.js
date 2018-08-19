@@ -77,10 +77,10 @@ server.listen(config.port, function(){
 // Define the handlers
 var handlers = {};
 
-// Sample handlers
+// Hello handler
 handlers.hello = function(data, callback){
    // Callback a http status code , and a payload object
-   callback(406,{'name' : 'hellow world, this is my first homework in master class'});
+   callback(200,{'message' : 'hellow world, this is my first homework in master class'});
 };
 
 // Not found hanlder
